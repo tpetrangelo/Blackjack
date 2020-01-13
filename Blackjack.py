@@ -52,13 +52,11 @@ class Dealer:
 
 def main():
 
-    print("Enter the number of decks you want!")
-    numDecks = int(input())
+    numDecks = int(input("Enter the number of decks you want: "))
 
     deck = Deck(numDecks)
     deck.shuffle()
-    deck.show()
-
+    
 
 if __name__ == '__main__':
     main()
