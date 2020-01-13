@@ -44,11 +44,18 @@ class Deck():
 
 class Player:
     def __init__(self):
-        self.hand = []
+        self.hand = [Deck.draw()]
+        
 
 class Dealer:
     def __init__(self):
-        self.hand = []
+        self.hand = [Deck.draw()]
+
+class Game:
+    def __init__(self):
+           
+
+    
 
 def main():
 
@@ -56,7 +63,8 @@ def main():
 
     deck = Deck(numDecks)
     deck.shuffle()
-    
+
+    newGame = Game()
 
 if __name__ == '__main__':
     main()
